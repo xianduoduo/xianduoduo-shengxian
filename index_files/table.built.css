@@ -1,0 +1,31 @@
+.fixed-table{
+    table-layout: fixed;
+    word-break: break-all;
+    font-size: 13px;
+}
+.fixed-table th{
+    white-space:nowrap;
+}
+.table-sort{
+
+}
+.table-sort th {
+    cursor: pointer;
+    font-weight: bold;
+}
+.table-sort th:hover,
+.table-sort th.sorted {
+    background: #d4d4d4;
+}
+.table-sort th.no-sort,
+.table-sort th.no-sort:hover {
+    cursor: not-allowed;
+}
+
+.table-sort th.sorted.ascending:after {
+    content: "  \2191";
+}
+
+.table-sort th.sorted.descending:after {
+    content: " \2193";
+}
